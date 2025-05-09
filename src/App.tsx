@@ -1,10 +1,15 @@
-import { Button } from "@/components/ui/button";
+import TitleBar from "./components/Titlebar";
+import MainMenu from "./pages/MainMenu";
+import { AppProviders } from "./contexts/AppProviders";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click mee</Button>
-    </div>
+    <AppProviders>
+      <div className="flex flex-col w-full h-dvh">
+        <TitleBar />
+        <MainMenu />
+      </div>
+    </AppProviders>
   );
 }
 
