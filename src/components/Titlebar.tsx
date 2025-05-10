@@ -23,7 +23,7 @@ const TitleBar = () => {
       className="h-[30px] z-50 select-none flex justify-between bg-neutral-800"
     >
       <div className="flex flex-row items-center opacity-70">
-        <h1 className="text-white text-sm ml-3">Aridium</h1>
+        <h1 className="text-white text-sm ml-3">Aridium (v0.0.1)</h1>
       </div>
       <div className="opacity-70">
         <div

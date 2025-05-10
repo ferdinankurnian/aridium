@@ -1,8 +1,7 @@
 import { Settings } from "lucide-react";
-import { DownloadSimple } from "@phosphor-icons/react";
 // import { Button } from "@/components/ui/button";
-import { CreateProjectDialog } from "./CreateProjectDialog";
-import { ImportProjectDialog } from "./ImportProjectDialog";
+import { CreateProjectDialog } from "./dialogs/CreateProjectDialog";
+import { ImportProjectDialog } from "./dialogs/ImportProjectDialog";
 
 import {
   Sidebar,

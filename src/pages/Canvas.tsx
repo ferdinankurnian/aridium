@@ -1,5 +1,6 @@
 import { ArrowLeft, Play, Stop } from "@phosphor-icons/react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Window } from "@tauri-apps/api/window";
 
@@ -37,7 +38,9 @@ export default function Canvas() {
           </div>
         </div>
         <div>
-          <Button>Next</Button>
+          <Link to="/level1">
+            <Button>Next</Button>
+          </Link>
         </div>
       </div>
       <div className="workpage grow flex flex-row">
