@@ -2,6 +2,7 @@ import { Settings } from "lucide-react";
 import { DownloadSimple } from "@phosphor-icons/react";
 // import { Button } from "@/components/ui/button";
 import { CreateProjectDialog } from "./CreateProjectDialog";
+import { ImportProjectDialog } from "./ImportProjectDialog";
 
 import {
   Sidebar,
@@ -16,11 +17,6 @@ import {
 
 // Menu items.
 const items = [
-  {
-    title: "Import Project",
-    url: "#",
-    icon: DownloadSimple,
-  },
   {
     title: "Settings",
     url: "#",
@@ -40,6 +36,7 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
+              <ImportProjectDialog />
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>

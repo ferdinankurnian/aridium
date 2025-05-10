@@ -5,13 +5,13 @@ export default function MainMenu() {
     <div className="grow flex flex-row h-full overflow-hidden">
       <AppSidebar />
 
-      <div className="flex flex-col w-full p-4 overflow-y-auto h-full">
-        <div className="mx-auto max-w-3xl">
+      <div className="flex flex-col w-full p-5 overflow-y-auto h-full">
+        <div className="mx-auto max-w-3xl xl:max-w-4xl">
           <h1 className="text-white font-semibold text-xl">Recent Projects</h1>
-          <div className="grid md:grid-cols-3 grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
             {Array.from({ length: 8 }).map((_, index) => (
-              <div key={index} className="bg-gray-800 rounded-md">
-                <div className="p-3 flex rounded-t-md flex-col bg-gray-900">
+              <div key={index} className="bg-neutral-800 rounded-md">
+                <div className="p-3 flex rounded-t-md flex-col bg-neutral-900">
                   <p className="text-white text-xs opacity-50">
                     Don't want no money <br />
                     Don't need a fancy car <br /> I don't want the title of a
